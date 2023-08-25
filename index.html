@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-search">
+                <div class="add-bar">
+                    <i class="fa-solid fa-location-dot" style="color: #ff828b;"></i>
+                    <input type="text" class="input-add" placeholder="Ashok Nagar, Sakinaka, Mumbai">
+                    <i class="fa-solid fa-sort-down" style="color: #505050;"></i>
+                </div>
+                <div class="line">
+
+                </div>
+                <div class="search-food">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #939393;"></i>
+                    </div>
+                    <input type="text" class="input-food" placeholder="Search for restaurant, cuisine or a dish ">
+                </div>
+            </div>
+            <div class="user-login">
+                <a href="#">Log in</a>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <section class="add-sect">
+        <div class="add-list">
+            <a href="#" class="list-item">Home</a>
+            <p>/</p>
+            <a href="#" class="list-item">India</a>
+            <p>/</p>
+            <a href="#" class="list-item">Mumbai</a>
+            <p>/</p>
+            <a href="#" class="list-item">Central Mumbai</a>
+            <p>/</p>
+            <a href="#" class="list-item curr-add">Ashok Nagar, Sakinaka Restaurants</a>
+        </div>
+    </section>
+
+    <section class="filter">
+        <div class="filter-sec">
+            <div class="filter-items-list">
+                <div class="filter-item icon-list">
+                    <i class="fa-solid fa-sliders" style="color: #9c9c9c;"></i>
+                    <p>Filters</p>
+                </div>
+                <div class="filter-item icon-list-2">
+                    <a href="#">Rating: 4.0+</a>
+                </div>
+                <div class="filter-item icon-list-2">
+                    <a href="#">Pure Veg</a>
+                </div>
+                <div class="filter-item icon-list">
+                    <a href="#">Cuisines</a>
+                    <i class="fa-solid fa-chevron-down" style="color: #9c9c9c;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hero1">
+        <div class="main-hero">
+            <h3>Inspiration for your first order</h3>
+            <section class="carousel">
+                <section class="heroFirst">
+                    <div class="space">
+                        <div class="main-con">
+                            <div class="img-hero1">
+                                <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png"
+                                    alt="Biryani Image">
+                            </div>
+                            <a href="#"><p>Biryani</p></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="heroFirst">
+                    <div class="space">
+                        <div class="main-con">
+                            <div class="img-hero1">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"
+                                    alt="Pizza Image">
+                            </div>
+                            <a href="#"><p>Pizza</p></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="heroFirst">
+                    <div class="space">
+                        <div class="main-con">
+                            <div class="img-hero1">
+                                <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"
+                                    alt="Burger Image">
+                            </div>
+                            <a href="#"><p>Burger</p></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="heroFirst">
+                    <div class="space">
+                        <div class="main-con">
+                            <div class="img-hero1">
+                                <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png"
+                                    alt="Chicken Image">
+                            </div>
+                            <a href="#"><p>Chicken</p></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="heroFirst">
+                    <div class="space">
+                        <div class="main-con">
+                            <div class="img-hero1">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/e444ade83eb22360b6ca79e6e777955f1632716661.png"
+                                    alt="Fried Rice Image">
+                            </div>
+                            <a href="#"><p>Fried Rice</p></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="heroFirst">
+                    <div class="space">
+                        <div class="main-con">
+                            <div class="img-hero1">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png"
+                                    alt="Thali Image">
+                            </div>
+                            <a href="#"><p>Thali</p></a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <div class="top-brands">
+        <h3>Top brands for you</h3>
+        <section class="brand-carousel">
+            <section class="main-carousel"> <!--1st -->
+                <section class="carousel-content">
+                    <div class="main-content">
+                        <div class="main-bord">
+                            <div class="brand-img">
+                                <div class="fimg">
+                                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/0e6f4a6a6d54c88d548abaa04a0227bc_1625164827.png?output-format=webp" alt="MacD">
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="Bname">McDonald's</h6>
+                        <h6 class="Time">29 min</h6>
+                    </div>
+                </section>
+                <section class="carousel-content">
+                    <div class="main-content">
+                        <div class="main-bord">
+                            <div class="brand-img">
+                                <div class="fimg">
+                                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617188211.png?output-format=webp" alt="Burger King">
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="Bname">Burger King</h6>
+                        <h6 class="Time">32 min</h6>
+                    </div>
+                </section>
+                <section class="carousel-content">
+                    <div class="main-content">
+                        <div class="main-bord">
+                            <div class="brand-img">
+                                <div class="fimg">
+                                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/9302c59eca94abbee01aec9acf9305f6_1676520651.png?output-format=webp" alt="Subway">
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="Bname">Subway</h6>
+                        <h6 class="Time">61 min</h6>
+                    </div>
+                </section>
+                <section class="carousel-content">
+                    <div class="main-content">
+                        <div class="main-bord">
+                            <div class="brand-img">
+                                <div class="fimg">
+                                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/80c09d718acddee05a655eb378bb442f_1617874818.png?output-format=webp" alt="KFC">
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="Bname">KFC</h6>
+                        <h6 class="Time">47 min</h6>
+                    </div>
+                </section>
+                <section class="carousel-content">
+                    <div class="main-content">
+                        <div class="main-bord">
+                            <div class="brand-img">
+                                <div class="fimg">
+                                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/c38f7540bcc5a38e918856ac06409056_1504531339.png?output-format=webp" alt="Pizza Hut">
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="Bname">Pizza Hut</h6>
+                        <h6 class="Time">33 min</h6>
+                    </div>
+                </section>
+                <section class="carousel-content">
+                    <div class="main-content">
+                        <div class="main-bord">
+                            <div class="brand-img">
+                                <div class="fimg">
+                                    <img src="https://b.zmtcdn.com/data/brand_creatives/logos/11f0a050068db77b5b959dd97cc11965_1644900886.png?output-format=webp" alt="Natural Ice cream">
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="Bname">Natural Ice Cream</h6>
+                        <h6 class="Time">32 min</h6>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </div>
+
+    <div class="address">
+        <h1>Delivery Restaurants in Ashok Nagar,  Sakinaka,  India</h1>
+    </div>
+    <div class="Food-menu">
+        <div class="Food-card">
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/4/19217464/dc7b17458d9f4cbe10e9851811da7f5e_o2_featured_v2.jpg?output-format=webp" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 120</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>New Lajawaab Seekh Corner</h4>
+                        
+                            <div class="rating">
+                                <p>3.9 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">North Indian</p>
+                            <p class="p2">₹50 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>30 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/6/19713916/5642ca48626bd4aa5264c59947c3b07e_o2_featured_v2.jpg?output-format=webp" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 100</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>Baba Falooda Chat Corner</h4>
+                        
+                            <div class="rating">
+                                <p>4.2 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Desserts, Beverages, Shake</p>
+                            <p class="p2">₹50 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>25 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/0/49340/4bbfa420fd9b003d78d5dc8f5b1242af_o2_featured_v2.jpg?output-format=webp" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 50</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>J.J Jalebi</h4>
+                        
+                            <div class="rating">
+                                <p>4.1 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Mithai, Desserts</p>
+                            <p class="p2">₹50 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>29 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/9/35079/618080e34388c1b55ac1280582c8f997_o2_featured_v2.jpg?output-format=webp" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 100</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>McDonald's</h4>
+                        
+                            <div class="rating">
+                                <p>4.0 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Burger, Fast Food, Desserts, Beverages</p>
+                            <p class="p2">₹50 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>25 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/2/18796372/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg?output-format=webp" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 120</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>La Pino'z Pizza</h4>
+                        
+                            <div class="rating">
+                                <p>3.7 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Pizza, Pasta, Italian, Fast Food</p>
+                            <p class="p2">₹50 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>35 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/8/18577178/b46307a6a28d24ecf69d5ec83ee9d451_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 100</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>WOW! Momo</h4>
+                        
+                            <div class="rating">
+                                <p>3.6 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Momos, Fast Food, Tibetan, Sichuan, Beverages</p>
+                            <p class="p2">₹200 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>45 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/7/37327/0b79e39ffc2e3770f3b66b26c0e6f4fd_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 70</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>KFC</h4>
+                        
+                            <div class="rating">
+                                <p>3.6 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Burger, Fast Food, Biryani, Beverages, Desserts</p>
+                            <p class="p2">₹200 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>49 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/1/49781/a6c8129329bf976270361b45058f110b_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 100</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>Burger King</h4>
+                        
+                            <div class="rating">
+                                <p>3.6 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Burger, Fast Food, Beverages</p>
+                            <p class="p2">₹200 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>60 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/1/38251/8d9386e15b28007eb0d0f450387d9548_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 120</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>Merwans Cake Stop</h4>
+                        
+                            <div class="rating">
+                                <p>4.3 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Bakery, Fast Food, Desserts</p>
+                            <p class="p2">₹200 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>25 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/3/18140523/bd6d35499c5fb33bea73c32bbf4b0237_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 80</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>The Belgian Waffle Co.</h4>
+                        
+                            <div class="rating">
+                                <p>4.1 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Waffle, Pancake, Ice Cream, Desserts, Beverages</p>
+                            <p class="p2">₹150 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>33 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/9/18441579/164bbd4e72c9a3e33653ad3113099837_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 100</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>Shahi Restaurant</h4>
+                        
+                            <div class="rating">
+                                <p>3.5 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">North Indian, Mughlai, Chinese, Biryani</p>
+                            <p class="p2">₹200 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>36 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="Food-item">
+                <div class="Food-item-margin">
+                    <a href="#">
+                        <div class="card-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/2/38302/9109d39e6e26b0b9da0af2657fb738ac_o2_featured_v2.jpg" alt="restaurant img">
+                        </div>
+                        <div class="off">
+                            <p>50% OFF up to 60</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pname">
+                            <h4>Tibb's Frankie - Serving Rolls Since 1969</h4>
+                        
+                            <div class="rating">
+                                <p>3.8 </p>
+                                <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="Category">
+                            <p class="p1">Rolls, North Indian</p>
+                            <p class="p2">₹200 for one</p>
+                        </div>
+                        <div class="time">
+                            <p>41 min</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="covid">
+                            <div class="covid-img">
+                                <img src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" alt="Covid img">
+                            </div>
+                            <p>Follows all Max Safety measures to ensure your food is safe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--Add food item here-->
+        </div>
+
+    </div>
+
+    <div class="FAQ">
+        <div class="faq-sec">
+            <p>Explore options near me</p>
+            <div class="faq1">
+                <section class="faq2">
+                    <div class="faq3">
+                        <div class="faq4">
+                            <section class="faq6">
+                                <h5>Popular cuisines near me</h5>
+                            </section>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="faq1">
+                <section class="faq2">
+                    <div class="faq3">
+                        <div class="faq4">
+                            <section class="faq6">
+                                <h5>Popular restaurant types near me</h5>
+                            </section>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="faq1">
+                <section class="faq2">
+                    <div class="faq3">
+                        <div class="faq4">
+                            <section class="faq6">
+                                <h5>Top Restaurant Chains</h5>
+                            </section>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="faq1">
+                <section class="faq2">
+                    <div class="faq3">
+                        <div class="faq4">
+                            <section class="faq6">
+                                <h5>Cities We Deliver To</h5>
+                            </section>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sec1">
+            <section class="sec2">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="">
+                <div class="sec2-emp"></div>
+                <section class="selector">
+                    <div class="India">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAsVBMVEX/mTMSiAf/////mjH//fv6+/cAgwAAAIgAAIUAAIMAAIAAAH4AAHvu7vfe3u7Hx+AAAHb5+f20tNb39/1LS6Ghocrk5PGSksSDg7utrdEAAHLMzOS+vtxSUqRERJzX1+oQEI1ERKMvL5Z/f7d5ebaYmManp88bG5JkZK/JyeEiIpFoaKqMjL9ycrSzs9uVlctYWKI3N5tgYKw6OpoeHo8YGJEsLJYAAJAbG5lYWKkmJpLm9FjFAAAEl0lEQVR4nO3ba3PiNhiGYaoeJB9kg0/YsbEg5rQkaUtINk3+/w/rK0OyDS/tTL9YmeG5Zgin/SDuNZYRZjQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPiffoZzo1/g3EjAOTTh0IRDEw5NuK/QpGjKu8XT5mlxVzaF68GIL9CkuJ8HvqeUknTx/GB+H7kekuMmdRZ4Utogvu/bLFJ6QVu7HZTTJsXMtxHU9iHMClNk4cNW2UR+5vQt5LLJym4Znj8VqWi0MEI3dGtKbySqsnI4LndNJjOfXnuXt1rE9v7v9k8sdJt31MqfTZyNzFkTvfOkak3/ytf2zx8ftyamVdLbaVdDc9VEz+llB/lxE4ntVLOkS3S8K3La86q5qyiOmkx2lCQvtUgruqen9GdLl6nNUKVClzlFeXP09nHUZOZJP+lv5XaKWdDlz9N1kfePN770Zm4G56bJil7wWjT97Ve6bCnMgXJsT/cpiVhTNjezj5MmEc04QXnarea0XaxWIt2k9kqs+82EnikDmn2cHNM6aZIp1dpdx2Rr9xiSjk1uhaarWyNSKU6P62mrVOZieC6axP77BpDuqUy1EGmotad1mIoFzcZ6n/bP0ubkxw7G56IJ/f+XadxPKoWkOCoRm1yHOt+IRFEKeTyyj9OSticH43PQxNAOlmbgvD8+i/xaJMGka4tx0XYiqETtG/uE3a9UtJs1ww/QQZOOXqmddKOZrfItTIS8a4IojILmTooktG+XambfXAuqVw4/QAdNnqS3Oh6i5nPaXpJxHo8jr36pvWgcr8d02JI8HydhvfLk0/ADHL4J7Tnn7weoOntJRH7TLMsymSVluWxucpHM2/elgsncxXQ8fJO1p7aTOGmOm0rlb+IkjPZ1VVb1PgqTbzu/6p/RcRJPHtXp3pCGb0KTid1HmOnrY04fiyfbcWduTdfu2858N914m9IH4/X29d78+MfDGr5JpmR4POqIVptgv4yjbm/afj02M/ulibuDP58e3zFxKB0ctg3f5E2p2ccqQJEfQlWapSctb2nuVXi7+lh51DOl3gYf4fBNaNpJP+6kuqhNnR9U30QdVrGpC/2P511MPMM3eZYqMk01ffz+EtzcjMnLw14eHcoX+wA9LP/Kujw2kZKbwUeI7YTD/oT7IvNOdt3zzr8fn5RXe3xS4TiWweedC/C5mPu8fhJj/UScrbMZrLP16ANfd7Ye+3xxPba7mvXY/1y3b/t1++PuhvbGwbWs2+P7nQs+fw+4xveAFr4vvgDnFXCTN5x/wuA8pQtwPtsFx/MelxfOe1xe63mPAufHXoTzqC/B+faXFPfPn36X8Xz1v8vo9b/f2W12+P3O14UmHJpwaMKhCTf6Fc6NfoNzo5/gHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCfc3xgk4+urIdocAAAAASUVORK5CYII=" alt="">
+                        <p>India</p>
+                        <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                    </div>
+                    <div class="English">
+                        <i class="fa-solid fa-globe" style="color: #000000;"></i>
+                        <p>English</p>
+                        <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                    </div>
+                </section>
+            </section>
+            <div class="main-footer">
+                <div class="foot1">
+                    <h6>ABOUT ZOMATO</h6>
+                    <nav>
+                        <a href="#"><p>Who We Are</p></a>
+                        <a href="#"><p>Blog</p></a>
+                        <a href="#"><p>Work With Us</p></a>
+                        <a href="#"><p>Investor Relations</p></a>
+                        <a href="#"><p>Report Fraud</p></a>
+                        <a href="#"><p>Contact Us</p></a>
+                    </nav>
+                </div>
+                <div class="foot2">
+                    <h6>ZOMAVERSE</h6>
+                    <nav>
+                        <a href="#"><p>Zomato</p></a>
+                        <a href="#"><p>Blinkit</p></a>
+                        <a href="#"><p>Feeding India</p></a>
+                        <a href="#"><p>Hyperpure</p></a>
+                        <a href="#"><p>Zomaland</p></a>
+                    </nav>
+                </div>
+                <div class="foot3">
+                    <div class="foot3-1">
+                        <h6>FOR RESTAURANTS</h6>
+                        <nav>
+                            <a href="#"><p>Partner With Us</p></a>
+                            <a href="#"><p>Apps For You</p></a>
+                        </nav>
+                    </div>
+                    <div class="foot3-2">
+                        <h6>FOR ENTERPRISES</h6>
+                        <nav>
+                            <a href="#"><p>Zomato For Enterprise</p></a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="foot4">
+                    <h6>LEARN MORE</h6>
+                    <nav>
+                        <a href="#"><p>Privacy</p></a>
+                        <a href="#"><p>Security</p></a>
+                        <a href="#"><p>Terms</p></a>
+                        <a href="#"><p>Sitemap</p></a>
+                    </nav>
+                </div>
+                <div class="foot5">
+                    <h6>SOCIAL LINKS</h6>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+                    </div>
+                    <div class="blank1"></div>
+                    <section class="store">
+                        <a href="#">
+                            <div class="storeimg">
+                                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="App store">
+                            </div>
+                        </a>
+                        <div class="blank2"></div>
+                        <a href="#">
+                            <div class="storeimg">
+                                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="Playstore">
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+            <hr class="h-line">
+            <p class="copyright">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
