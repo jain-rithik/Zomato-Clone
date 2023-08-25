@@ -16,9 +16,8 @@ To get started with the Zomato Clone project:
 2. Open the `index.html` file in your preferred web browser.
 
 ## App Preview
-You can view a demonstration of the Zomato Clone project below:
 
-![Zomato Clone Preview](Zomato.gif)
+![Zomato Clone Preview](app-preview.png)
 
 ## Technologies Used
 
